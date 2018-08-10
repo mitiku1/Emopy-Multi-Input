@@ -59,6 +59,15 @@ Options for demo program are
 * -w : model weights
 * -i : Face image source. This could be either `image`, `video` or `webcam`. Defualt is webcam.
 * -p : Path to source file. If options -i is webcam this is not necessary.
+### Generating confussion matrix
+``` 
+python confussion_matrix.py --model path-to-json file --weights path-to-weights --dataset_dir path-to-dataset
+```  
+Options for demo program are
+* --model : Path to model json file
+* --weights : Path to model weights
+* --dataset_dir  : Path to datset folder which contains train and test folders
+
 
 ## Requirements
 * keras >= 2.0
